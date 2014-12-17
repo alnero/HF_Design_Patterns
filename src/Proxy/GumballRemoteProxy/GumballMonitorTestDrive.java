@@ -1,4 +1,4 @@
-package Proxy;
+package Proxy.GumballRemoteProxy;
 
 import java.rmi.Naming;
 

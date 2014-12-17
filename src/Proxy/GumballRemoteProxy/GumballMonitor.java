@@ -1,4 +1,4 @@
-package Proxy;
+package Proxy.GumballRemoteProxy;
 
 /**
  * Class to monitor Gumball Machines and produce a report on their status.

@@ -1,4 +1,4 @@
-package Proxy;
+package Proxy.GumballRemoteProxy;
 
 /**
  * Every 10 turn Gumball Machine gets into the Winner state dispensing two gumballs instead of one

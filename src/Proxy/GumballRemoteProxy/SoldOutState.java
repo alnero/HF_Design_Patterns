@@ -1,4 +1,4 @@
-package Proxy;
+package Proxy.GumballRemoteProxy;
 
 /**
  * Empty state of the Gumball Machine.

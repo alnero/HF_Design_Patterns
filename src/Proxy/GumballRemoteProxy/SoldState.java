@@ -1,4 +1,4 @@
-package Proxy;
+package Proxy.GumballRemoteProxy;
 
 /**
  * State when quarter was inserted and crank was turned.

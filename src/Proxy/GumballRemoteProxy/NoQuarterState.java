@@ -1,4 +1,4 @@
-package Proxy;
+package Proxy.GumballRemoteProxy;
 
 /**
  * Gumball machine in working state, waiting for quarter.
