@@ -7,8 +7,8 @@ public interface BeatModelInterface {
     void initialize();
     void on();
     void off();
-    void setBPM(int bpm);
-    int getBPM();
+    void setBpm(int bpm);
+    int getBpm();
     void registerObserver(BPMObserver observer);
     void removeObserver(BPMObserver observer);
     void registerObserver(BeatObserver observer);

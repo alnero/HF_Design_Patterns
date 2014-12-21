@@ -27,24 +27,24 @@ public class BeatModel implements BeatModelInterface, MetaEventListener {
     public void on() {
         sequencer.setMicrosecondPosition(0);
         sequencer.start();
-        setBPM(90);
+        setBpm(90);
     }
 
     @Override
     public void off() {
-        setBPM(0);
+        setBpm(0);
         sequencer.stop();
     }
 
     @Override
-    public void setBPM(int bpm) {
+    public void setBpm(int bpm) {
         this.bpm = bpm;
-        sequencer.setTempoInBPM(getBPM());
+        sequencer.setTempoInBPM(getBpm());
         notifyBPMObservers();
     }
 
     @Override
-    public int getBPM() {
+    public int getBpm() {
         return bpm;
     }
 
@@ -90,7 +90,7 @@ public class BeatModel implements BeatModelInterface, MetaEventListener {
             beatEvent();
             sequencer.setMicrosecondPosition(0);
             sequencer.start();
-            setBPM(getBPM());
+            setBpm(getBpm());
         }
     }
 
@@ -101,7 +101,7 @@ public class BeatModel implements BeatModelInterface, MetaEventListener {
             sequencer.addMetaEventListener(this);
             sequence = new Sequence(Sequence.PPQ, 4);
             track = sequence.createTrack();
-            sequencer.setTempoInBPM(getBPM());
+            sequencer.setTempoInBPM(getBpm());
         } catch (Exception e){
             e.printStackTrace();
         }

@@ -33,16 +33,16 @@ public class BeatController implements ControllerInterface{
 
     @Override
     public void setBPM(int bpm) {
-        model.setBPM(bpm);
+        model.setBpm(bpm);
     }
 
     @Override
     public void increaseBPM() {
-        model.setBPM(model.getBPM() + 1);
+        model.setBpm(model.getBpm() + 1);
     }
 
     @Override
     public void decreaseBPM() {
-        model.setBPM(model.getBPM() - 1);
+        model.setBpm(model.getBpm() - 1);
     }
 }

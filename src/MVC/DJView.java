@@ -65,7 +65,7 @@ public class DJView implements ActionListener, BeatObserver, BPMObserver{
             @Override
             public void actionPerformed(ActionEvent e) {
                 controller.start();
-                bpmTextField.setText(model.getBPM() + "");
+                bpmTextField.setText(model.getBpm() + "");
             }
         });
 
@@ -91,7 +91,7 @@ public class DJView implements ActionListener, BeatObserver, BPMObserver{
         controlFrame.setJMenuBar(menuBar);
 
         bpmTextField = new JTextField(2);
-//        bpmTextField.setText(model.getBPM() + "");
+//        bpmTextField.setText(model.getBpm() + "");
         setBPMBtn = new JButton("Set BPM");
         setBPMBtn.setSize(10,40);
         increaseBPMBtn = new JButton(" >> ");
@@ -121,11 +121,11 @@ public class DJView implements ActionListener, BeatObserver, BPMObserver{
     }
 
     public void updateBPM(){
-        int bpm = model.getBPM();
+        int bpm = model.getBpm();
         if(bpm == 0){
             bpmOutputLabel.setText("offline");
         } else {
-            bpmOutputLabel.setText(model.getBPM() + "BPM");
+            bpmOutputLabel.setText(model.getBpm() + "BPM");
         }
     }
 
@@ -140,10 +140,10 @@ public class DJView implements ActionListener, BeatObserver, BPMObserver{
             controller.setBPM(bpm);
         } else if (e.getSource() == increaseBPMBtn){
             controller.increaseBPM();
-            bpmTextField.setText(model.getBPM() + "");
+            bpmTextField.setText(model.getBpm() + "");
         } else if (e.getSource() == decreaseBPMBtn){
             controller.decreaseBPM();
-            bpmTextField.setText(model.getBPM() + "");
+            bpmTextField.setText(model.getBpm() + "");
         }
     }
 
